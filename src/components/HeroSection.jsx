@@ -8,7 +8,7 @@ const HeroSection = () => {
             <Container>
                 <div className='w-full display flex md:flex-row gap-10 sm:gap-1 flex-col items-center justify-between'>
                     <div className='font-inter bg-transparent md:w-[42%]'>
-                        <p className='font-[700] text-[48px]'>
+                        <p className='font-[700] text-[32px] md:text-[48px]'>
                             Amazing
                             Experiences from Our Wonderful Customers
                         </p>

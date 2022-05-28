@@ -1,11 +1,10 @@
 import React from 'react';
 import Container from './helpers/Container';
-import { testifiersList } from './helpers/testifiersList'
+import { secondTestifiersList } from './helpers/secondTestifiersList'
 import Button from './helpers/Button'
 
-const Experience = () => {
-
-  const testifiers = testifiersList;
+const SecondExperience = () => {
+  const testifiers = secondTestifiersList;
 
   return (
     <section className='flex flex-col items-center '>
@@ -21,8 +20,8 @@ const Experience = () => {
                 <p className='font-inter font-600 text-[24px]'>
                   {testifier.name}
                 </p>
-                <div className='flex gap-4 mb-4 '>
-                  <p>In {testifier.location}</p>
+                <div className=' mb-4 '>
+                 
                   <Button text={testifier.identity} />
                 </div>
                 <div>
@@ -38,4 +37,6 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default SecondExperience
+
+
