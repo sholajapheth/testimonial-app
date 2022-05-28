@@ -2,15 +2,16 @@ import React from 'react'
 import heroTestimonialImage from "../resources/images/heroTestimonialImage.png"
 import lineVector from "../resources/images/lineVector.svg"
 import Container from './helpers/Container'
+import { motion } from 'framer-motion'
 
 const HeroTestimonial = () => {
     return (
         <section className='flex flex-col  items-center '>
             <Container>
-                <div className='w-full display flex md:flex-row  sm:gap-1 flex-col items-center justify-between mt-[5rem]'>
+                <div className='w-full display flex md:flex-row  sm:gap-1 flex-col items-center justify-between my-[5rem]'>
                     <div className=' '>
                         <div className='overflow-hidden flex items-center relative w-full'>
-                            <span className='absolute m-auto w-[631px] h-[631px] top-[2px] rounded-full bg-[#2E2E2E]'>
+                            <span className='absolute m-auto w-[631px] h-[631px] top-[2px] rounded-full bg-[#2E2E2E] '>
                             </span>
                             <img className='relative md:w-[80%] m-auto' src={heroTestimonialImage} alt="hero section" />
                         </div>
@@ -26,10 +27,14 @@ const HeroTestimonial = () => {
                             <p className='text-white text-[18px]'>
                                 I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back! I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back!
                             </p>
-                            <div>
+                            <motion.div
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                                className='cursor-pointer'
+                            >
                                 <p className='text-[18px] text-white '>SHARE YOUR OWN STORY!</p>
                                 <img src={lineVector} alt="line" />
-                            </div>
+                            </motion.div>
                         </div>
 
                     </div>

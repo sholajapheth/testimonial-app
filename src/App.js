@@ -4,6 +4,7 @@ import HeroTestimonial from "./components/HeroTestimonial";
 import Experience from "./components/Experience";
 import SecondHeroTestimonial from "./components/SecondHeroTestimonial"
 import SecondExperience from "./components/SecondExperience";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <SecondHeroTestimonial />
       </div>
       <SecondExperience />
+      <Footer />
 
     </div>
   );
