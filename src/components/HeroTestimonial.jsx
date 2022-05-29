@@ -8,7 +8,7 @@ const HeroTestimonial = (props) => {
     return (
         <section className='flex flex-col  items-center '>
             <Container>
-                <div className='w-full display flex md:flex-row  sm:gap-1 flex-col items-center justify-between mt-[5rem]'>
+                <div className='w-full display flex md:flex-row  sm:gap-1 flex-col items-center justify-between '>
                     <div className=' '>
                         <div className='overflow-hidden flex items-center relative w-full'>
                             <span className='absolute m-auto w-[631px] h-[631px] top-[2px] rounded-full bg-[#2E2E2E] '>

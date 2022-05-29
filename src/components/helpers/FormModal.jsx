@@ -61,16 +61,16 @@ const FormModal = (props) => {
                                 <div className='flex gap-2 mb-2'>
 
                                     <div className='flex gap-1 items-center'>
-                                        <input type="radio" className=' p-3 border-2 border-[#eaeaea] bg-[#fefefe] rounded-md'
+                                        <input type="radio" className=' p-3 '
                                             {...register("customer")} placeholder='last name' />
 
                                         <label htmlFor="lastName"> Customer</label>
                                     </div>
                                     <div className='flex gap-1 items-center'>
-                                        <input type="radio" className=' p-3 border-2 border-[#eaeaea] bg-[#fefefe] rounded-md'
+                                        <input type="radio" className=' p-3 '
                                             {...register("customer")} placeholder='last name' />
 
-                                        <label htmlFor="lastName"> Customer</label>
+                                        <label htmlFor="lastName"> Vendor</label>
                                     </div>
                                 </div>
                             </div>
