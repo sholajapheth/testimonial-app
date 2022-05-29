@@ -1,9 +1,10 @@
 import React from 'react'
-import heroTestimonialImage2 from "../resources/images/heroTestimonialImage2.png"
+import heroTestimonialImage2 from "../resources/images/heroTestimonialImage2.png";
+import { motion } from 'framer-motion';
 import lineVector from "../resources/images/lineVector.svg"
 import Container from './helpers/Container'
 
-const SecondHeroTestimonial = () => {
+const SecondHeroTestimonial = (props) => {
     return (
         <section className='flex flex-col  items-center '>
             <Container>
@@ -19,10 +20,14 @@ const SecondHeroTestimonial = () => {
                             <p className=' text-[18px]'>
                                 I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back! I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back!
                             </p>
-                            <div>
+                            <motion.div
+                                onClick={props.handleClick}
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                                className='cursor-pointer'>
                                 <p className='text-[18px]  '>SHARE YOUR OWN STORY!</p>
                                 <img src={lineVector} alt="line" />
-                            </div>
+                            </motion.div>
                         </div>
 
                     </div>
